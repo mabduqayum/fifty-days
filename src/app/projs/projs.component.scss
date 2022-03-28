@@ -1,0 +1,23 @@
+mat-grid-list {
+  margin: 2rem;
+
+  mat-grid-tile {
+    background: lightblue;
+    text-align: center;
+    transition: all .5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lightskyblue;
+
+      mat-grid-tile-footer {
+        opacity: 1;
+      }
+    }
+
+    mat-grid-tile-footer {
+      opacity: 0;
+      transition: all .5s;
+    }
+  }
+}

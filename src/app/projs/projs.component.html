@@ -1,0 +1,15 @@
+<mat-grid-list
+  [cols]="colCount"
+  rowHeight="1.68:1"
+  (window:resize)="onResize($event)"
+  gutterSize="1rem"
+>
+  <mat-grid-tile
+    *ngFor="let project of projects; let day=index"
+    (click)="goToProject(day)">
+    <div class="day-num">Day {{day}}</div>
+    <mat-grid-tile-footer>
+      {{project}}
+    </mat-grid-tile-footer>
+  </mat-grid-tile>
+</mat-grid-list>
