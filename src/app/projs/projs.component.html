@@ -1,15 +1,18 @@
 <mat-grid-list
   [cols]="colCount"
   rowHeight="1.68:1"
-  (window:resize)="onResize($event)"
-  gutterSize="1rem"
->
+  (window:resize)="onResize($event)">
   <mat-grid-tile
     *ngFor="let project of projects; let day=index"
-    (click)="goToProject(day)">
-    <div class="day-num">Day {{day}}</div>
-    <mat-grid-tile-footer>
-      {{project}}
-    </mat-grid-tile-footer>
+    (click)="goToProject(day)"
+    style="background-image: url('assets/projs/{{day+1}}-{{project.path}}.png')"
+  >
+    <a class="live-preview" [routerLink]="project.path">Live Demo</a>
+    <div>
+      <div class="day-num">Day {{day + 1}}</div>
+      <mat-grid-tile-footer>
+        {{project.name}}
+      </mat-grid-tile-footer>
+    </div>
   </mat-grid-tile>
 </mat-grid-list>

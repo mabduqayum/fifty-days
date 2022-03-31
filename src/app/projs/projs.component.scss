@@ -1,18 +1,56 @@
+@import "src/vars";
+
 mat-grid-list {
-  margin: 2rem;
+  margin: 1rem;
 
   mat-grid-tile {
-    background: lightblue;
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     transition: all .5s;
-    cursor: pointer;
+
 
     &:hover {
       background-color: lightskyblue;
+      backdrop-filter: blur(4px);
 
-      mat-grid-tile-footer {
+      .live-preview,
+      mat-grid-tile-footer,
+      .day-num {
         opacity: 1;
       }
+    }
+
+    .live-preview {
+      background-color: $violet;
+      color: white;
+      font-size: 24px;
+      opacity: 0;
+      padding: .5rem 1rem;
+      transition: all .5s;
+
+      &:hover {
+        background-color: $darkviolet;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+
+    .day-num {
+      background-color: $darkviolet;
+      border-bottom-left-radius: 4px;
+      color: white;
+      opacity: 0;
+      padding: .5rem 1rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: all .5s;
     }
 
     mat-grid-tile-footer {
