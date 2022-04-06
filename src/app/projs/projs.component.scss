@@ -32,7 +32,7 @@ mat-grid-list {
       font-size: 24px;
       opacity: 0;
       padding: .5rem 1rem;
-      transition: all $norm, transform $fast;
+      transition: all $norm, transform $fast linear;
 
       &:hover {
         background-color: $darkViolet;
