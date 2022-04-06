@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from "./pages/main/main.component";
-import {ExpandingCardsComponent} from "./pages/expanding-cards/expanding-cards.component";
 import {Page404Component} from "./pages/page404/page404.component";
+import {ExpandingCardsComponent} from "./projects/expanding-cards/expanding-cards.component";
 
 const routes: Routes = [
   {path: '', component: MainComponent},
