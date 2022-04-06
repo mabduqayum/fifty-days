@@ -1,1 +1,7 @@
-<p>expanding-cards works!</p>
+<div class="pics" *ngFor="let pic of pics; let index=index">
+  <img [class.active-image]="activeIndex===index"
+       (click)="activateImage(index)"
+       [src]="pic"
+       alt="pic"
+  >
+</div>

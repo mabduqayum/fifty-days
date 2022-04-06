@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-expanding-cards',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./expanding-cards.component.scss']
 })
 export class ExpandingCardsComponent implements OnInit {
+  pics: string[] = [];
+  activeIndex: number = 0;
 
-  constructor() { }
+
+  constructor() {
+    for (let i = 1; i < 6; i++) {
+      this.pics.push(`https://picsum.photos/200/600?random=${i}`)
+    }
+  }
 
   ngOnInit(): void {
+  }
+
+  activateImage(index: number): void {
+    this.activeIndex = index;
   }
 
 }
