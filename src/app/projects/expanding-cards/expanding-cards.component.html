@@ -1,7 +1,3 @@
-<div class="pics" *ngFor="let pic of pics; let index=index">
-  <img [class.active-image]="activeIndex===index"
-       (click)="activateImage(index)"
-       [src]="pic"
-       alt="pic"
-  >
+<div class="pics" *ngFor="let pic of pics; let index=index" [class.active]="activeIndex===index">
+  <img (click)="activateImage(index)" [src]="pic" alt="pic">
 </div>
