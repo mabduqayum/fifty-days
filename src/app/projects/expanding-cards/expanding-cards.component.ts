@@ -29,10 +29,6 @@ export class ExpandingCardsComponent implements OnInit {
   private initImages() {
     let width = window.innerWidth - 40 | 0;
     let height = window.innerHeight - 40 | 0;
-    if (width < 767 + 40) {
-      width = window.innerWidth - 20 | 0;
-      height = window.innerHeight * .8 | 0;
-    }
     for (let i = 1; i < 6; i++) {
       this.pics.push(`https://picsum.photos/${width}/${height}?random=${i}`)
     }
