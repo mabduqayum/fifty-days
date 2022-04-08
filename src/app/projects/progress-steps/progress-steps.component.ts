@@ -7,7 +7,6 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ProgressStepsComponent implements OnInit {
   activeItem = 0;
-  progress = '0';
   items = [1, 2, 3, 4];
 
   constructor() {
@@ -16,17 +15,15 @@ export class ProgressStepsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  updateProgress(): void {
-    this.progress = (100 / (this.items.length - 1) * this.activeItem).toFixed(2) + '%';
+  getProgress(): string {
+    return (100 / (this.items.length - 1) * this.activeItem).toFixed(2) + '%';
   }
 
   nextItem() {
     this.activeItem++;
-    this.updateProgress();
   }
 
   prevItem() {
     this.activeItem--;
-    this.updateProgress();
   }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="progress" [style.width]="progress"></div>
+  <div class="progress" [style.width]="getProgress()"></div>
   <div class="circle" *ngFor="let item of items; let index=index" [class.completed]="index <= activeItem">
     {{item}}
   </div>
