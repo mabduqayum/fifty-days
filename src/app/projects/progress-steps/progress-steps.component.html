@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="progress" [style.width]="progress"></div>
+  <div class="circle" *ngFor="let item of items; let index=index" [class.completed]="index <= activeItem">
+    {{item}}
+  </div>
+</div>
+
+<footer>
+  <button (click)="prevItem()" [disabled]="activeItem < 1">Prev</button>
+  <button (click)="nextItem()" [disabled]="activeItem >= items.length - 1">Next</button>
+</footer>

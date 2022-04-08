@@ -10,6 +10,7 @@ import {Page404Component} from "./pages/page404/page404.component";
 import {ExpandingCardsComponent} from "./projects/expanding-cards/expanding-cards.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {ProjsComponent} from "./components/projs/projs.component";
+import { ProgressStepsComponent } from './projects/progress-steps/progress-steps.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ProjsComponent} from "./components/projs/projs.component";
     Page404Component,
     MainComponent,
     HeaderComponent,
-    ProjsComponent
+    ProjsComponent,
+    ProgressStepsComponent
   ],
   imports: [
     BrowserModule,
