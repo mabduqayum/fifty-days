@@ -11,6 +11,7 @@ import {ExpandingCardsComponent} from "./projects/expanding-cards/expanding-card
 import {HeaderComponent} from "./components/header/header.component";
 import {ProjsComponent} from "./components/projs/projs.component";
 import { ProgressStepsComponent } from './projects/progress-steps/progress-steps.component';
+import { RotatingNavigationComponent } from './projects/rotating-navigation/rotating-navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProgressStepsComponent } from './projects/progress-steps/progress-steps
     MainComponent,
     HeaderComponent,
     ProjsComponent,
-    ProgressStepsComponent
+    ProgressStepsComponent,
+    RotatingNavigationComponent
   ],
   imports: [
     BrowserModule,

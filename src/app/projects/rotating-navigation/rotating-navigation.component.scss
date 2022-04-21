@@ -1,0 +1,42 @@
+:host {
+  background-color: ivory;
+  transform-origin: top left;
+  transition: transform 0.5s;
+  width: 100%;
+  min-height: 100%;
+  padding: 50px;
+}
+
+.circle-container {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  left: -40px;
+  transition: all .9s;
+
+  &.active {
+    transform: rotate(-180deg) translate(60px, -40px);
+  }
+
+  mat-icon {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  //color: white;
+  }
+
+  .close {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+  }
+}
+
+.content {
+  padding: 32px;
+
+  img {
+    width: 100%;
+  }
+}
