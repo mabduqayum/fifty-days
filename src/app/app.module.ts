@@ -7,11 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialExampleModule} from "./material-module";
 import {MainComponent} from "./pages/main/main.component";
 import {Page404Component} from "./pages/page404/page404.component";
-import {ExpandingCardsComponent} from "./projects/expanding-cards/expanding-cards.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {ProjsComponent} from "./components/projs/projs.component";
+import {ExpandingCardsComponent} from "./projects/expanding-cards/expanding-cards.component";
 import { ProgressStepsComponent } from './projects/progress-steps/progress-steps.component';
 import { RotatingNavigationComponent } from './projects/rotating-navigation/rotating-navigation.component';
+import { NavContentsComponent } from './projects/rotating-navigation/navigation-menu/nav-contents.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RotatingNavigationComponent } from './projects/rotating-navigation/rota
     HeaderComponent,
     ProjsComponent,
     ProgressStepsComponent,
-    RotatingNavigationComponent
+    RotatingNavigationComponent,
+    NavContentsComponent
   ],
   imports: [
     BrowserModule,

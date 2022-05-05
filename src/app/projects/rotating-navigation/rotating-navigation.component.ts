@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-rotating-navigation',
@@ -6,14 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rotating-navigation.component.scss']
 })
 export class RotatingNavigationComponent implements OnInit {
-  isActive = false;
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
-  toggleMenu(): void {
-    this.isActive = !this.isActive;
-  }
 }
