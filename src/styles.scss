@@ -50,6 +50,10 @@ a {
   text-decoration: none;
 }
 
-.share simple-snack-bar{
+.share simple-snack-bar {
   justify-content: center;
+}
+
+mat-icon {
+  user-select: none;
 }
